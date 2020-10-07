@@ -1,10 +1,10 @@
 import random
 l1=['Stone','Paper','Scissor']
-comp=random.choice(l1)
 a=b=n=0
 ch="y"
 while (n<5)and(ch=="y"or ch=="Y"):
     user=input("YOUR TURN \n")
+    comp=random.choice(l1)
     if((comp=="Stone"or comp=="stone"or comp=="STONE")and (user=="Paper"or user=="paper"or user=="PAPER"))or((comp=="Paper"or comp=="PAPER"or comp=="paper")and (user=="Scissor"or user=="scissor"or user=="SCISSOR"))or((comp=="Scissor"or comp=="scissor"or comp=="SCISSOR")and (user=="Stone"or user=="stone"or user=="STONE")):
         a=a+1
         print(comp)
